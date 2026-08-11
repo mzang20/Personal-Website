@@ -91,3 +91,23 @@ if (filterButtons.length && projectCards.length) {
     });
   });
 }
+
+// Pre-render hidden sections once during idle time so the first switch to each
+// one isn't a cold layout/paint (which caused the initial section-switch lag).
+function warmHiddenViews() {
+  views.forEach((view) => {
+    if (!view.hidden) return;
+    const prev = view.style.cssText;
+    view.style.cssText = 'position:absolute;left:-9999px;top:0;visibility:hidden';
+    view.hidden = false;
+    void view.offsetHeight; // force layout + glyph rasterization
+    view.hidden = true;
+    view.style.cssText = prev;
+  });
+}
+
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(warmHiddenViews, { timeout: 2000 });
+} else {
+  window.addEventListener('load', () => setTimeout(warmHiddenViews, 200));
+}

@@ -886,11 +886,19 @@ a {
   font-weight: 600;
 }
 
-.text-cta i {
+.icon {
+  width: 1em;
+  height: 1em;
+  flex: none;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+
+.text-cta .icon {
   transition: transform 0.2s ease;
 }
 
-.text-cta:hover i {
+.text-cta:hover .icon {
   transform: translateX(4px);
 }
 
