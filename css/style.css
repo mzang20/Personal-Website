@@ -57,9 +57,7 @@ a {
   height: var(--header-height);
   display: flex;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(31, 31, 31, 0.98), rgba(31, 31, 31, 0.84));
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(31, 31, 31, 0.98);
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
 }
 

@@ -47,20 +47,3 @@ if (filterButtons.length && projectCards.length) {
     });
   });
 }
-
-if (window.ScrollReveal && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const sr = ScrollReveal({
-    distance: '34px',
-    duration: 900,
-    delay: 80,
-    reset: false,
-    easing: 'cubic-bezier(0.2, 0.7, 0.2, 1)'
-  });
-
-  sr.reveal('.hero-text, .page-heading', { origin: 'top' });
-  sr.reveal('.hero-img, .intro-photo', { origin: 'bottom', delay: 140 });
-  sr.reveal('.intro-block, .timeline-card, .project-card, .contact-card, .impact-card, .journey-item, .skill-card, .availability-card', {
-    origin: 'bottom',
-    interval: 70
-  });
-}
