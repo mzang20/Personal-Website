@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Selected machine learning, computer vision, and data science projects by Michael Zang." name="description"/>
+<title>Projects | Michael Zang</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Permanent+Marker&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+</head>
+<body>
+<header class="site-header">
+<nav aria-label="Primary navigation" class="nav-shell">
+<a aria-label="Home" class="logo" href="index.html"><i class="ri-macbook-line"></i></a>
+<ul class="navlist">
+<li><a href="index.html">Home</a></li>
+<li><a href="introduction.html">Introduction</a></li>
+<li><a href="resume.html">Resume</a></li>
+<li><a aria-current="page" class="active" href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<button aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" id="menu-icon" type="button">
+<span></span><span></span><span></span>
+</button>
+</nav>
+</header>
+<main class="page-main">
+<div class="page-shell">
+<div class="page-heading">
+<span class="eyebrow">Selected work</span>
+<h1>Projects</h1>
+<p>Some things I have built or worked on.</p>
+</div>
+<div aria-label="Project filters" class="project-filters">
+<button class="filter-btn active" data-filter="all" type="button">All</button>
+<button class="filter-btn" data-filter="ml" type="button">Machine Learning</button>
+<button class="filter-btn" data-filter="cv" type="button">Computer Vision</button>
+<button class="filter-btn" data-filter="data" type="button">Data Science</button>
+<button class="filter-btn" data-filter="software" type="button">Software</button>
+</div>
+<section aria-label="Projects" class="projects-list">
+<article class="project-card featured-project" data-categories="ml cv data">
+<div aria-hidden="true" class="project-media project-visual twin-visual">
+<div class="visual-face visual-face-left"></div>
+<div class="visual-face visual-face-right"></div>
+<div class="visual-score">0.98</div>
+<span>same person?</span>
+</div>
+<div class="project-content">
+<div class="project-meta-row">
+<span class="project-number">Featured Research</span>
+<span class="project-status">Completed Aug 2026</span>
+</div>
+<h2>Identical Twins Face Recognition</h2>
+<p>Studied how several face-recognition models perform on identical twins. I built the dataset, ran 10-fold verification, retrained ArcFace without flip augmentation, and used RISE to inspect model behavior.</p>
+<div class="tag-row"><span>PyTorch</span><span>ArcFace</span><span>Computer Vision</span><span>Deep Learning</span><span>Interpretability</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="cv data software">
+<div aria-hidden="true" class="project-media project-visual people-visual">
+<div class="camera-frame">
+<span class="person p1"></span><span class="person p2"></span><span class="person p3"></span>
+<div class="count-line"></div>
+<strong>IN 128 · OUT 121</strong>
+</div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Applied CV</span><span class="project-status">Carnival</span></div>
+<h2>Passenger Counting with Detection + Tracking</h2>
+<p>Built a passenger-counting pipeline using MMDetection, OC-SORT, line crossing, ROI masking, and five-minute aggregation for CCTV footage.</p>
+<div class="tag-row"><span>MMDetection</span><span>OC-SORT</span><span>OpenCV</span><span>Python</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="data ml">
+<div aria-hidden="true" class="project-media project-visual steam-visual">
+<div class="mini-chart">
+<span style="height:32%"></span><span style="height:48%"></span><span style="height:66%"></span><span style="height:42%"></span><span style="height:82%"></span><span style="height:58%"></span>
+</div>
+<div class="visual-label">GAME LIFECYCLE</div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Data Science</span><span class="project-status">In Progress</span></div>
+<h2>Steam Game Lifecycle Analysis</h2>
+<p>Analyzing Steam game and player activity data with SQL and Pandas to study retention and game lifecycles. Currently exploring clustering and survival analysis.</p>
+<div class="tag-row"><span>SQL</span><span>Pandas</span><span>Clustering</span><span>Survival Analysis</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="software data">
+<div aria-hidden="true" class="project-media project-visual tft-visual">
+<div class="tft-dashboard">
+<div class="tft-topline"><span>TFT / STATS</span><strong>TOP 4</strong></div>
+<div class="tft-score">62<span>%</span></div>
+<div class="tft-bars">
+<i style="height:42%"></i><i style="height:68%"></i><i style="height:55%"></i><i style="height:82%"></i><i style="height:61%"></i>
+</div>
+<div class="tft-units"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+</div>
+<div class="visual-label">MATCH HISTORY → INSIGHTS</div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Full-stack Analytics</span><span class="project-status">Personal Project</span></div>
+<h2>TFT Statistical Tool</h2>
+<p>Full-stack app that uses Riot match data to summarize personal TFT performance by traits, items, units, and placements.</p>
+<div class="tag-row"><span>React</span><span>Tailwind</span><span>Vite</span><span>Flask</span><span>Riot API</span><span>Data Analysis</span></div>
+<div class="project-links">
+<a href="https://mzang20.github.io/TFT-Stat-Tool/" target="_blank" rel="noopener noreferrer">View Website <i class="ri-external-link-line"></i></a>
+<a href="https://github.com/mzang20/TFT-Stat-Tool" target="_blank" rel="noopener noreferrer">GitHub <i class="ri-github-line"></i></a>
+</div>
+</div>
+</article>
+<article class="project-card" data-categories="ml data">
+<div aria-hidden="true" class="project-media project-visual pokemon-visual">
+<div class="poke-ball"><span></span></div>
+<div class="class-dots"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Machine Learning</span><span class="project-status">Course Project</span></div>
+<h2>Pokémon Type Prediction</h2>
+<p>Compared several machine learning models for predicting Pokémon type from numerical and gameplay features using cross-validation and PCA.</p>
+<div class="tag-row"><span>Scikit-learn</span><span>SVM</span><span>Random Forest</span><span>PCA</span><span>Cross-Validation</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="ml data software">
+<div class="project-media project-visual recommender-visual">
+<div aria-hidden="true" class="rec-grid">
+<span class="rec-user"><i class="ri-user-3-line"></i></span>
+<span class="rec-line l1"></span><span class="rec-line l2"></span><span class="rec-line l3"></span>
+<span class="rec-item i1">A</span><span class="rec-item i2">B</span><span class="rec-item i3">C</span>
+<strong>RECOMMEND</strong>
+</div></div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Recommender Systems</span><span class="project-status">Project Lead</span></div>
+<h2>Closet Recommendation Website</h2>
+<p>Worked on recommender models in PyTorch along with backend and data-cleaning work for an outfit recommendation site.</p>
+<div class="tag-row"><span>PyTorch</span><span>NCF</span><span>LightGCN</span><span>MySQL</span><span>JWT</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="cv software">
+<div class="project-media project-visual plate-visual">
+<div aria-hidden="true" class="plate-frame">
+<span class="bbox-label">plate 0.94</span>
+<div class="plate-box">7ABC123</div>
+<span class="scan-line"></span>
+</div>
+<div class="visual-label">DETECT → READ → VERIFY</div></div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Full-stack CV</span><span class="project-status">May — Aug 2026</span></div>
+<h2>Car Plate Prediction Website</h2>
+<p>Built a YOLO + Tesseract license plate recognition pipeline and a Dockerized FastAPI/React interface for viewing detections and OCR output.</p>
+<div class="tag-row"><span>YOLO</span><span>Tesseract</span><span>FastAPI</span><span>React</span><span>Docker</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="software data">
+<div aria-hidden="true" class="project-media project-visual mines-visual">
+<div class="mine-grid">
+<span>1</span><span>2</span><span class="mine">✦</span><span>1</span>
+<span>1</span><span class="safe">✓</span><span>2</span><span>1</span>
+<span>0</span><span>1</span><span>2</span><span class="mine">✦</span>
+<span class="safe">✓</span><span>1</span><span>1</span><span>1</span>
+</div>
+<div class="mine-balance">BALANCE <strong>$1,240</strong></div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">C Programming</span><span class="project-status">Fundamentals of Computing</span></div>
+<h2>Mines Casino Game</h2>
+<p>Built a casino-style Mines game in C with hidden bombs, betting, payouts, virtual currency, and game-state tracking.</p>
+<div class="tag-row"><span>C</span><span>Game Logic</span><span>Probability</span><span>State Management</span></div>
+</div>
+</article></section>
+<section class="cta-band">
+<div>
+<span class="eyebrow">Contact</span>
+<h2>Want to get in touch?</h2>
+</div>
+<a class="btn" href="contact.html">Contact Me</a>
+</section>
+</div>
+</main>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
