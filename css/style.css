@@ -2183,3 +2183,11 @@ a {
     padding: 18px;
   }
 }
+
+.page-view[hidden] {
+  display: none !important;
+}
+
+#journey {
+  scroll-margin-top: calc(var(--header-height) + 28px);
+}

@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Michael Zang — computer science graduate student focused on machine learning, data science, and computer vision." name="description"/>
 <title>Michael Zang | Machine Learning &amp; Data Science</title>
-<link href="css/style.css" rel="stylesheet"/>
-<link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet"/>
+<link href="css/style.css?v=9" rel="stylesheet"/>
+
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&amp;family=Permanent+Marker&amp;family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-</head>
+<link as="image" href="img/main.png" rel="preload"/><link as="image" href="img/graduation.jpg" rel="preload"/></head>
 <body class="home-page">
 <header class="site-header">
 <nav aria-label="Primary navigation" class="nav-shell">
-<a aria-label="Home" class="logo" href="index.html"><i class="ri-macbook-line"></i></a>
+<a aria-label="Home" class="logo" href="#home"><i class="ri-macbook-line"></i></a>
 <ul class="navlist">
-<li><a aria-current="page" class="active" href="index.html">Home</a></li>
-<li><a href="introduction.html">Introduction</a></li>
-<li><a href="resume.html">Resume</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a aria-current="page" class="active" data-view="home" href="#home">Home</a></li>
+<li><a class="" data-view="introduction" href="#introduction">Introduction</a></li>
+<li><a class="" data-view="resume" href="#resume">Resume</a></li>
+<li><a class="" data-view="projects" href="#projects">Projects</a></li>
+<li><a class="" data-view="contact" href="#contact">Contact</a></li>
 </ul>
 <button aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" id="menu-icon" type="button">
 <span></span><span></span><span></span>
 </button>
 </nav>
 </header>
+<div id="site-views">
+<section class="page-view" id="home">
 <main>
 <section class="hero">
 <div class="hero-inner">
@@ -38,8 +39,8 @@
 <h1>Michael Zang</h1>
 <p>Incoming M.S. Computer Science student at USC, interested in data science, machine learning, and computer vision.</p>
 <div class="hero-actions">
-<a class="btn" href="projects.html">View My Work</a>
-<a class="btn btn-outline" href="introduction.html#journey">My Journey</a>
+<a class="btn" href="#projects">View My Work</a>
+<a class="btn btn-outline" href="#journey">My Journey</a>
 <a class="text-cta" download="" href="resume.pdf">Download Resume <i class="ri-download-line"></i></a>
 <a class="text-cta" href="https://www.linkedin.com/in/mzang20/" rel="noopener noreferrer" target="_blank">LinkedIn <i class="ri-arrow-right-up-line"></i></a></div>
 </div>
@@ -58,11 +59,350 @@
 <div aria-label="Social links" class="social-rail">
 <a aria-label="GitHub" href="https://github.com/mzang20" rel="noopener noreferrer" target="_blank"><i class="ri-github-line"></i></a><a aria-label="LinkedIn" href="https://www.linkedin.com/in/mzang20/" rel="noopener noreferrer" target="_blank"><i class="ri-linkedin-box-line"></i></a>
 <a aria-label="Email" href="mailto:zangm@usc.edu"><i class="ri-mail-line"></i></a>
-<a aria-label="Projects" href="projects.html"><i class="ri-folder-3-line"></i></a>
+<a aria-label="Projects" href="#projects"><i class="ri-folder-3-line"></i></a>
 </div>
 <div class="scroll-down">
-<a aria-label="Go to introduction page" href="introduction.html"><i class="ri-arrow-down-s-fill"></i></a>
+<a aria-label="Go to introduction page" href="#introduction"><i class="ri-arrow-down-s-fill"></i></a>
 </div>
-<script src="js/script.js"></script>
+</section><section class="page-view" id="introduction" hidden>
+<main class="page-main">
+<div class="page-shell">
+<div class="page-heading">
+<span class="eyebrow">A little about me</span>
+<h1>Introduction</h1>
+<p>A bit about my background and what I am interested in.</p>
+</div>
+<section aria-label="About Michael" class="intro-grid">
+<div class="intro-photo intro-photo-image">
+<img alt="Michael Zang wearing graduation regalia at the University of Notre Dame" src="img/graduation.jpg"/>
+</div>
+<div class="intro-copy">
+<article class="intro-block">
+<span class="section-label">01 / About</span>
+<h2>Toronto → Notre Dame → USC</h2>
+<p>I am Michael Zang, originally from Toronto. I finished my B.S. in Computer Science at Notre Dame and am starting my M.S. in Computer Science at USC.</p>
+</article>
+<article class="intro-block">
+<span class="section-label">02 / Focus</span>
+<h2>Building with data</h2>
+<p>I am mainly interested in data science and machine learning, with experience in computer vision, analytics, and software development.</p>
+</article>
+<article class="intro-block">
+<span class="section-label">03 / Currently</span>
+<h2>Now</h2>
+<p>I finished my identical-twin face recognition research in August 2026 and am starting graduate school at USC.</p>
+</article>
+</div>
+</section>
+<section aria-labelledby="journey-title" class="journey-section" id="journey">
+<div class="section-heading-left">
+<span class="eyebrow">How I got here</span>
+<h2 id="journey-title">My Journey</h2>
+<p>A short version of how I got here.</p>
+</div>
+<div class="journey-line">
+<article class="journey-item">
+<span class="journey-year">2022</span>
+<div class="journey-dot"></div>
+<div class="journey-content">
+<h3>University of Notre Dame</h3>
+<p>Studied computer science and became interested in data science and machine learning.</p>
+</div>
+</article>
+<article class="journey-item">
+<span class="journey-year">2024</span>
+<div class="journey-dot"></div>
+<div class="journey-content">
+<h3>Lenovo Research AI Lab</h3>
+<p>My first data science internship, working with financial data and machine learning.</p>
+</div>
+</article>
+<article class="journey-item">
+<span class="journey-year">2024 — 2026</span>
+<div class="journey-dot"></div>
+<div class="journey-content">
+<h3>Identical-Twin Face Recognition Research</h3>
+<p>Spent two years studying how face recognition models handle identical twins.</p>
+</div>
+</article>
+<article class="journey-item">
+<span class="journey-year">2025</span>
+<div class="journey-dot"></div>
+<div class="journey-content">
+<h3>Carnival Cruise Line</h3>
+<p>Worked on passenger-counting computer vision and fuel-performance tools.</p>
+</div>
+</article>
+<article class="journey-item">
+<span class="journey-year">2026</span>
+<div class="journey-dot"></div>
+<div class="journey-content">
+<h3>University of Southern California</h3>
+<p>Starting an M.S. in Computer Science with a focus on data science and machine learning.</p>
+</div>
+</article>
+</div>
+</section>
+<section class="cta-band">
+<div>
+<span class="eyebrow">Projects</span>
+<h2>Some things I have worked on.</h2>
+</div>
+<a class="btn" href="#projects">Explore Projects</a>
+</section>
+</div>
+</main>
+</section><section class="page-view" id="resume" hidden>
+<main class="page-main">
+<div class="page-shell">
+<div class="page-heading">
+<span class="eyebrow">Resume</span>
+<h1>Resume</h1>
+<p>Education, experience, and technical skills.</p>
+</div>
+<section aria-label="Resume summary" class="resume-summary">
+<div>
+<span class="eyebrow">Profile</span>
+<h2>Computer Science · Data Science · ML</h2>
+</div>
+<p>M.S. Computer Science student at USC interested in data science and machine learning.</p>
+<div class="resume-links"><a class="btn" download="" href="resume.pdf">Download Resume <i class="ri-download-line"></i></a><a class="btn btn-outline" href="https://www.linkedin.com/in/mzang20/" rel="noopener noreferrer" target="_blank">LinkedIn <i class="ri-linkedin-box-line"></i></a><a class="btn btn-outline" href="https://github.com/mzang20" rel="noopener noreferrer" target="_blank">GitHub <i class="ri-github-line"></i></a></div>
+</section>
+<section aria-label="Resume timeline" class="resume-layout">
+<div class="resume-column">
+<h2>EDUCATION</h2>
+<div class="timeline"><article class="timeline-card"><span class="date">Aug 2026 — May 2028 (Expected)</span><h3>M.S. Computer Science (Incoming)</h3><p>University of Southern California · Los Angeles, CA</p></article><article class="timeline-card"><span class="date">Aug 2022 — May 2026</span><h3>B.S. Computer Science</h3><p>University of Notre Dame · Minor in Business Economics · Sheedy Family Scholar</p></article></div>
+</div>
+<div class="resume-column">
+<h2>EXPERIENCE</h2>
+<div class="timeline"><article class="timeline-card"><span class="date">Aug 2024 — Aug 2026</span><h3>Computer Vision Research · University of Notre Dame</h3><p>Studied face-recognition performance on identical twins. First-author research completed in August 2026.</p></article><article class="timeline-card"><span class="date">May 2025 — Jul 2025</span><h3>Data Scientist Intern · Carnival Cruise Line</h3><p>Worked on fuel-performance analytics and passenger-counting computer vision tools.</p></article><article class="timeline-card"><span class="date">Jun 2024 — Aug 2024</span><h3>Data Scientist Intern · Lenovo Research AI Lab</h3><p>Worked on financial-data analysis and machine learning forecasting in Lenovo Research AI Lab.</p></article></div>
+</div>
+</section>
+<section aria-labelledby="skills-title" class="skills-section">
+<div class="section-heading-left compact">
+<span class="eyebrow">Toolkit</span>
+<h2 id="skills-title">Skills</h2>
+</div>
+<div class="skill-groups"><article class="skill-card"><span>Languages</span><p>Python · SQL · C</p></article><article class="skill-card"><span>Data</span><p>Pandas · NumPy · Scikit-learn · Spark · AWS</p></article><article class="skill-card"><span>ML &amp; Computer Vision</span><p>OpenCV · PyTorch · YOLO · Recommender Systems</p></article><article class="skill-card"><span>Tools</span><p>Docker · Git · React · Flask · Linux</p></article><article class="skill-card"><span>Analytics</span><p>A/B Testing · Power BI · Tableau · Excel</p></article></div>
+</section>
+<section aria-labelledby="resume-projects-title" class="resume-projects-section"><div class="section-heading-left compact"><span class="eyebrow">Selected work</span><h2 id="resume-projects-title">Projects</h2></div><div class="resume-project-grid"><article class="timeline-card"><span class="date">Aug 2026 — Present</span><h3>Steam Game Lifecycle Analysis</h3><p>Analyzing Steam game and player data with SQL and Pandas to study retention and game lifecycles.</p></article><article class="timeline-card"><span class="date">May 2026 — Aug 2026</span><h3>Car Plate Prediction Website</h3><p>Built a YOLO + Tesseract license plate recognition pipeline with a FastAPI/React web interface.</p></article><article class="timeline-card"><span class="date">Sep 2024 — Dec 2026</span><h3>Closet Recommendation Website · Project Lead</h3><p>Worked on PyTorch recommender models, backend features, and catalog data cleaning for an outfit recommendation site.</p></article></div></section><section aria-labelledby="leadership-title" class="resume-leadership-section"><div class="section-heading-left compact"><span class="eyebrow">Beyond coursework</span><h2 id="leadership-title">Leadership &amp; Activities</h2></div><div class="resume-project-grid"><article class="timeline-card"><span class="date">Feb 2022 — May 2024</span><h3>Student International Business Club · Amazon</h3><p>Worked on an Amazon Health chatbot concept and presented the project to executives in Boston.</p></article><article class="timeline-card"><span class="date">Sep 2023 — May 2024</span><h3>CS For Good · Dismas House</h3><p>Led a community technology project for Dismas House, including website updates and technology classes.</p></article></div></section><div class="resume-footer">
+<p>More detail is available in the PDF resume and project page.</p>
+<div><a class="btn" download="" href="resume.pdf">Download PDF <i class="ri-download-line"></i></a>
+<a class="btn btn-outline" href="#projects">View Projects</a>
+</div>
+</div>
+</div>
+</main>
+</section><section class="page-view" id="projects" hidden>
+<main class="page-main">
+<div class="page-shell">
+<div class="page-heading">
+<span class="eyebrow">Selected work</span>
+<h1>Projects</h1>
+<p>Some things I have built or worked on.</p>
+</div>
+<div aria-label="Project filters" class="project-filters">
+<button class="filter-btn active" data-filter="all" type="button">All</button>
+<button class="filter-btn" data-filter="ml" type="button">Machine Learning</button>
+<button class="filter-btn" data-filter="cv" type="button">Computer Vision</button>
+<button class="filter-btn" data-filter="data" type="button">Data Science</button>
+<button class="filter-btn" data-filter="software" type="button">Software</button>
+</div>
+<section aria-label="Projects" class="projects-list">
+<article class="project-card featured-project" data-categories="ml cv data">
+<div aria-hidden="true" class="project-media project-visual twin-visual">
+<div class="visual-face visual-face-left"></div>
+<div class="visual-face visual-face-right"></div>
+<div class="visual-score">0.98</div>
+<span>same person?</span>
+</div>
+<div class="project-content">
+<div class="project-meta-row">
+<span class="project-number">Featured Research</span>
+<span class="project-status">Completed Aug 2026</span>
+</div>
+<h2>Identical Twins Face Recognition</h2>
+<p>Studied how several face-recognition models perform on identical twins. I built the dataset, ran 10-fold verification, retrained ArcFace without flip augmentation, and used RISE to inspect model behavior.</p>
+<div class="tag-row"><span>PyTorch</span><span>ArcFace</span><span>Computer Vision</span><span>Deep Learning</span><span>Interpretability</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="cv data software">
+<div aria-hidden="true" class="project-media project-visual people-visual">
+<div class="camera-frame">
+<span class="person p1"></span><span class="person p2"></span><span class="person p3"></span>
+<div class="count-line"></div>
+<strong>IN 128 · OUT 121</strong>
+</div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Applied CV</span><span class="project-status">Carnival</span></div>
+<h2>Passenger Counting with Detection + Tracking</h2>
+<p>Built a passenger-counting pipeline using MMDetection, OC-SORT, line crossing, ROI masking, and five-minute aggregation for CCTV footage.</p>
+<div class="tag-row"><span>MMDetection</span><span>OC-SORT</span><span>OpenCV</span><span>Python</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="data ml">
+<div aria-hidden="true" class="project-media project-visual steam-visual">
+<div class="mini-chart">
+<span style="height:32%"></span><span style="height:48%"></span><span style="height:66%"></span><span style="height:42%"></span><span style="height:82%"></span><span style="height:58%"></span>
+</div>
+<div class="visual-label">GAME LIFECYCLE</div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Data Science</span><span class="project-status">In Progress</span></div>
+<h2>Steam Game Lifecycle Analysis</h2>
+<p>Analyzing Steam game and player activity data with SQL and Pandas to study retention and game lifecycles. Currently exploring clustering and survival analysis.</p>
+<div class="tag-row"><span>SQL</span><span>Pandas</span><span>Clustering</span><span>Survival Analysis</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="software data">
+<div aria-hidden="true" class="project-media project-visual tft-visual">
+<div class="tft-dashboard">
+<div class="tft-topline"><span>TFT / STATS</span><strong>TOP 4</strong></div>
+<div class="tft-score">62<span>%</span></div>
+<div class="tft-bars">
+<i style="height:42%"></i><i style="height:68%"></i><i style="height:55%"></i><i style="height:82%"></i><i style="height:61%"></i>
+</div>
+<div class="tft-units"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+</div>
+<div class="visual-label">MATCH HISTORY → INSIGHTS</div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Full-stack Analytics</span><span class="project-status">Personal Project</span></div>
+<h2>TFT Statistical Tool</h2>
+<p>Full-stack app that uses Riot match data to summarize personal TFT performance by traits, items, units, and placements.</p>
+<div class="tag-row"><span>React</span><span>Tailwind</span><span>Vite</span><span>Flask</span><span>Riot API</span><span>Data Analysis</span></div>
+<div class="project-links">
+<a href="https://mzang20.github.io/TFT-Stat-Tool/" rel="noopener noreferrer" target="_blank">View Website <i class="ri-external-link-line"></i></a>
+<a href="https://github.com/mzang20/TFT-Stat-Tool" rel="noopener noreferrer" target="_blank">GitHub <i class="ri-github-line"></i></a>
+</div>
+</div>
+</article>
+<article class="project-card" data-categories="ml data">
+<div aria-hidden="true" class="project-media project-visual pokemon-visual">
+<div class="poke-ball"><span></span></div>
+<div class="class-dots"><i></i><i></i><i></i><i></i><i></i></div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Machine Learning</span><span class="project-status">Course Project</span></div>
+<h2>Pokémon Type Prediction</h2>
+<p>Compared several machine learning models for predicting Pokémon type from numerical and gameplay features using cross-validation and PCA.</p>
+<div class="tag-row"><span>Scikit-learn</span><span>SVM</span><span>Random Forest</span><span>PCA</span><span>Cross-Validation</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="ml data software">
+<div class="project-media project-visual recommender-visual">
+<div aria-hidden="true" class="rec-grid">
+<span class="rec-user"><i class="ri-user-3-line"></i></span>
+<span class="rec-line l1"></span><span class="rec-line l2"></span><span class="rec-line l3"></span>
+<span class="rec-item i1">A</span><span class="rec-item i2">B</span><span class="rec-item i3">C</span>
+<strong>RECOMMEND</strong>
+</div></div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Recommender Systems</span><span class="project-status">Project Lead</span></div>
+<h2>Closet Recommendation Website</h2>
+<p>Worked on recommender models in PyTorch along with backend and data-cleaning work for an outfit recommendation site.</p>
+<div class="tag-row"><span>PyTorch</span><span>NCF</span><span>LightGCN</span><span>MySQL</span><span>JWT</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="cv software">
+<div class="project-media project-visual plate-visual">
+<div aria-hidden="true" class="plate-frame">
+<span class="bbox-label">plate 0.94</span>
+<div class="plate-box">7ABC123</div>
+<span class="scan-line"></span>
+</div>
+<div class="visual-label">DETECT → READ → VERIFY</div></div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">Full-stack CV</span><span class="project-status">May — Aug 2026</span></div>
+<h2>Car Plate Prediction Website</h2>
+<p>Built a YOLO + Tesseract license plate recognition pipeline and a Dockerized FastAPI/React interface for viewing detections and OCR output.</p>
+<div class="tag-row"><span>YOLO</span><span>Tesseract</span><span>FastAPI</span><span>React</span><span>Docker</span></div>
+</div>
+</article>
+<article class="project-card" data-categories="software data">
+<div aria-hidden="true" class="project-media project-visual mines-visual">
+<div class="mine-grid">
+<span>1</span><span>2</span><span class="mine">✦</span><span>1</span>
+<span>1</span><span class="safe">✓</span><span>2</span><span>1</span>
+<span>0</span><span>1</span><span>2</span><span class="mine">✦</span>
+<span class="safe">✓</span><span>1</span><span>1</span><span>1</span>
+</div>
+<div class="mine-balance">BALANCE <strong>$1,240</strong></div>
+</div>
+<div class="project-content">
+<div class="project-meta-row"><span class="project-number">C Programming</span><span class="project-status">Fundamentals of Computing</span></div>
+<h2>Mines Casino Game</h2>
+<p>Built a casino-style Mines game in C with hidden bombs, betting, payouts, virtual currency, and game-state tracking.</p>
+<div class="tag-row"><span>C</span><span>Game Logic</span><span>Probability</span><span>State Management</span></div>
+</div>
+</article></section>
+<section class="cta-band">
+<div>
+<span class="eyebrow">Contact</span>
+<h2>Want to get in touch?</h2>
+</div>
+<a class="btn" href="#contact">Contact Me</a>
+</section>
+</div>
+</main>
+</section><section class="page-view" id="contact" hidden>
+<main class="page-main">
+<div class="page-shell contact-page-shell">
+<div class="page-heading">
+<span class="eyebrow">Get in touch</span>
+<h1>Contact</h1>
+<p>Email or LinkedIn are the easiest ways to reach me.</p>
+</div>
+<section aria-label="Current availability" class="availability-card">
+<div aria-hidden="true" class="availability-dot"></div>
+<div>
+<span>Open to</span>
+<h2>Data Science &amp; Machine Learning Opportunities</h2>
+<p>M.S. Computer Science @ USC · Los Angeles, CA</p>
+</div>
+</section>
+<section aria-label="Contact information" class="contact-grid">
+<article class="contact-card">
+<div>
+<div class="contact-icon"><i class="ri-mail-line"></i></div>
+<h2>Email</h2>
+</div>
+<div>
+<a class="contact-line" href="mailto:zangm@usc.edu">zangm@usc.edu</a>
+<a class="contact-line" href="mailto:mingjiazang@gmail.com">mingjiazang@gmail.com</a>
+</div>
+</article>
+<article class="contact-card">
+<div>
+<div class="contact-icon"><i class="ri-github-line"></i></div>
+<h2>GitHub</h2>
+</div>
+<div>
+<a class="contact-line" href="https://github.com/mzang20" rel="noopener noreferrer" target="_blank">github.com/mzang20</a>
+<p>Code and projects.</p>
+</div>
+</article>
+<article class="contact-card"><div><div class="contact-icon"><i class="ri-linkedin-box-line"></i></div><h2>LinkedIn</h2></div><div><a class="contact-line" href="https://www.linkedin.com/in/mzang20/" rel="noopener noreferrer" target="_blank">linkedin.com/in/mzang20</a><p>Experience and updates.</p></div></article><article class="contact-card">
+<div>
+<div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+<h2>Location</h2>
+</div>
+<div>
+<p>Los Angeles, California</p>
+<p>Originally from Toronto, Canada</p>
+</div>
+</article>
+</section>
+<section class="contact-close">
+<span class="eyebrow">Contact</span>
+<h2>Feel free to reach out.</h2>
+<div class="contact-close-actions"><a class="btn" href="mailto:zangm@usc.edu">Send an Email <i class="ri-arrow-right-up-line"></i></a><a class="btn btn-outline" download="" href="resume.pdf">Download Resume <i class="ri-download-line"></i></a><a class="text-cta" href="https://www.linkedin.com/in/mzang20/" rel="noopener noreferrer" target="_blank">LinkedIn <i class="ri-arrow-right-up-line"></i></a></div>
+</section>
+</div>
+</main>
+</section>
+</div>
+<script src="js/script.js?v=9"></script>
 </body>
 </html>
